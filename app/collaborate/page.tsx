@@ -4,28 +4,28 @@ export const metadata = { title: 'Collaborate | Asili Tech' }
 
 const groups = [
   {
-    title: 'Informal workers',
-    body: 'If you earn from more than one activity and would like to try AMKA as part of the pilot, tell me. I will explain what data is collected, how it is anonymised, and that you can stop at any time.',
-    cta: 'Ask to join the AMKA pilot',
-    subject: 'AMKA%20pilot',
+    title: 'Personal-service professionals',
+    body: 'Are you a hairdresser, barber, nail technician, makeup artist or beauty professional in Johannesburg? We would value a conversation about how you find customers, show your work and build trust.',
+    cta: 'Express interest in SkillVault',
+    subject: 'SkillVault%20professional%20pilot',
   },
   {
-    title: 'Researchers',
-    body: 'If you work on informal finance, development economics or portfolio theory, I would welcome your feedback on the thesis design and methodology.',
-    cta: 'Send feedback on the research',
-    subject: 'Research%20feedback',
+    title: 'Potential customers',
+    body: 'If you regularly book personal services, tell us how you discover providers, what makes you trust them and what would make booking easier.',
+    cta: 'Share customer feedback',
+    subject: 'SkillVault%20customer%20research',
   },
   {
-    title: 'Advisors and mentors',
-    body: 'Experienced people in fintech, financial inclusion or African research who are willing to review my work and challenge my assumptions.',
-    cta: 'Offer advice',
-    subject: 'Advisor%20enquiry',
+    title: 'Researchers and advisors',
+    body: 'We welcome thoughtful feedback on African technology, informal economies, financial inclusion, marketplace trust, responsible AI and product research.',
+    cta: 'Share your expertise',
+    subject: 'Research%20and%20advisory',
   },
   {
-    title: 'Press',
-    body: 'If you are covering informal economies, financial inclusion or African AI, I am happy to talk about the work, including what is not finished.',
-    cta: 'Contact for press',
-    subject: 'Press%20enquiry',
+    title: 'Technical and ecosystem partners',
+    body: 'We are open to conversations with people and organisations who can contribute relevant technical expertise, pilot access, mentorship or responsible funding.',
+    cta: 'Discuss collaboration',
+    subject: 'Partnership%20enquiry',
   },
 ]
 
@@ -34,11 +34,14 @@ export default function Collaborate() {
     <div>
       <section className="bg-asili-dark py-16 text-white md:py-20">
         <div className="section-container max-w-3xl">
-          <h1 className="mb-4 text-white">Work with us</h1>
-          <p className="text-lg text-gray-100">Asili Tech is early. The most useful help right now is honest feedback, first users, and good questions.</p>
+          <h1 className="mb-4 text-white">Build with us</h1>
+          <p className="text-lg text-gray-100">
+            Asili Tech is building deliberately. The most useful support at this
+            stage is honest feedback, access to real problems, pilot participants
+            and people who can challenge our assumptions.
+          </p>
         </div>
       </section>
-
       <section className="section-container py-16">
         <div className="grid gap-6 md:grid-cols-2">
           {groups.map((g) => (
@@ -52,22 +55,25 @@ export default function Collaborate() {
           ))}
         </div>
       </section>
-
       <section className="bg-asili-cream py-16">
         <div className="section-container max-w-3xl">
           <h2 className="mb-8">Common questions</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="mb-2 text-lg">Do you have funding?</h3>
-              <p className="text-gray-700">Asili Tech is currently self-funded. I am open to conversations with partners, but no investment round is open.</p>
+              <h3 className="mb-2 text-lg">Is SkillVault open to the public?</h3>
+              <p className="text-gray-700">Not yet. We are defining the MVP and validating the first personal-services pilot. Expressing interest does not guarantee access to a live product.</p>
             </div>
             <div>
-              <h3 className="mb-2 text-lg">Can I use your data?</h3>
-              <p className="text-gray-700">No datasets are public yet. Any sharing will follow consent, anonymisation and an ethics review, and will be described on the research page.</p>
+              <h3 className="mb-2 text-lg">Can I participate in research?</h3>
+              <p className="text-gray-700">You can share product feedback. Any formal research use of personal information or participant data will require an appropriate consent process and safeguards.</p>
             </div>
             <div>
-              <h3 className="mb-2 text-lg">Is AMKA available to everyone?</h3>
-              <p className="text-gray-700">Not yet. It is in a small pilot. Write in and I will add you to the list as capacity allows.</p>
+              <h3 className="mb-2 text-lg">Are you seeking funding?</h3>
+              <p className="text-gray-700">We are exploring suitable non-dilutive funding, technical credits and ecosystem partnerships. We are not presenting an open investment round.</p>
+            </div>
+            <div>
+              <h3 className="mb-2 text-lg">Where are you based?</h3>
+              <p className="text-gray-700">Asili Tech is currently founder-led from Johannesburg, South Africa, with a longer-term focus on problems and opportunities across African markets.</p>
             </div>
           </div>
         </div>
