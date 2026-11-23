@@ -1,5 +1,4 @@
-// Single place to update facts that change over time.
-// Leave a link empty until it really exists. The site will show a contact button instead.
+// Keep public facts that change over time in one place.
 export const site = {
   name: 'Asili Tech',
   domain: 'asilitech.com',
@@ -7,5 +6,5 @@ export const site = {
   founder: 'Kwanele Mlalazi',
   amkaWhatsAppUrl: '',
   skillVaultUrl: '',
-  lastUpdated: 'October 2026',
+  lastUpdated: 'November 2026',
 }
