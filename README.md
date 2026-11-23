@@ -1,22 +1,48 @@
-# Asili Tech website
+# Asili Tech website content update
 
-Next.js 14 + Tailwind CSS. Content reflects the current status of the products and research.
+This update is written for the repository's existing stack:
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- GitHub + Vercel deployment
 
-## Run locally
-    npm install
-    npm run dev
+## Files to replace
 
-## Before going live
-1. Set up a mailbox for hello@asilitech.com, or change the address in `lib/site.ts`.
-2. When AMKA has a public WhatsApp link, put it in `amkaWhatsAppUrl` in `lib/site.ts`. Same for `skillVaultUrl`.
-3. Check the AMKA feature description on `app/products/page.tsx` against the build you actually deployed.
-4. Update `app/progress/page.tsx` monthly. Only add numbers you can verify.
+Copy the files in this bundle into the matching paths in your repository:
 
-## Deploy (free)
-1. Push this folder to a GitHub repo.
-2. In Vercel, choose "Add New Project", import the repo and deploy. The free plan is enough for this site.
-3. In Vercel, go to Settings → Domains and add asilitech.com. Vercel shows the DNS records to set at your registrar.
+- `app/page.tsx`
+- `app/about/page.tsx`
+- `app/products/page.tsx`
+- `app/progress/page.tsx`
+- `app/collaborate/page.tsx`
+- `lib/site.ts`
 
-## Updating content
-- Home, about, products, research, progress, collaborate: edit the matching file in `app/`.
-- Blog: copy `app/blog/why-im-building-asili-tech/` to a new folder, edit the text, and add a card on `app/blog/page.tsx`.
+No new dependencies are required. Existing shared components, navigation, layout, styling tokens and Tailwind configuration are retained.
+
+## Apply the update
+
+1. Download and extract this ZIP.
+2. In your local clone of `Muller007/asilitech-website`, replace the six files above.
+3. Run `npm install` if needed.
+4. Run `npm run build`.
+5. Review all pages locally with `npm run dev`.
+6. Commit and push to the GitHub `main` branch.
+7. Vercel should automatically build and deploy if the repository is already connected.
+
+## Important checks before deployment
+
+- Confirm `hello@asilitech.com` is monitored.
+- Confirm that the statements about AMKA's current implementation and testing are accurate before adding detailed claims elsewhere.
+- The update deliberately describes SkillVault as being in product definition and MVP planning, not as a live beta.
+- The update does not claim that the parent venture is a registered legal entity or that either product has launched.
+- Confirm the public wording about your degree and current MSc enrolment is accurate.
+- If you later have a real SkillVault landing page or waitlist, set `skillVaultUrl` in `lib/site.ts` to that exact URL.
+
+## Content strategy
+
+The revised site positions Asili Tech around economic participation:
+- AMKA Finance: financial understanding and income records.
+- SkillVault: professional identity, work evidence, customer discovery and opportunity.
+
+It keeps the products distinct while explaining their shared purpose. It also changes the collaboration page to invite personal-service professionals and potential customers for the SkillVault pilot.
