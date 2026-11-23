@@ -19,14 +19,13 @@ export default function About() {
         <h2 className="mb-6">Our story</h2>
         <div className="prose-body">
           <p>
-            Asili Tech was founded by Kwanele Mlalazi, a computer science graduate
-            originally from Zimbabwe and based in Johannesburg. His path into
+            Asili Tech was founded by Kwanele Mlalazi, a computer science graduate. His path into
             technology began through self-directed learning and grew into a deeper
             interest in machine learning, data and the ways technology can address
             practical problems.
           </p>
           <p>
-            He holds a BSc in Computer Science from the University of the People and
+            He holds a BSc in Computer Science  and
             is pursuing an MSc in Financial Engineering at WorldQuant University.
             His technical interests include applied AI, financial engineering,
             African-language technology and data-driven tools for underserved
