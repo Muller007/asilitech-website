@@ -3,23 +3,26 @@ import { site } from '@/lib/site'
 export const metadata = { title: 'Progress | Asili Tech' }
 
 const done = [
-  'AMKA code written',
-  'AMKA tested with 3 users',
-  'Asili Tech website built',
-  'Thesis proposal drafted',
+  'Asili Tech website and public product information established',
+  'AMKA product concept and initial implementation work',
+  'SkillVault business direction and two-sided marketplace concept defined',
+  'SkillVault initial personal-services pilot segment selected',
+  'Initial SkillVault requirements and system-design foundations documented',
 ]
 
 const inProgress = [
-  'SkillVault development, targeting a beta in about 3 weeks',
-  'Phase 1 data collection planning, starting with the first AMKA users',
-  'Data protection and consent plan',
+  'AMKA product refinement and validation',
+  'SkillVault MVP requirements, user journeys and data model',
+  'SkillVault pilot discovery with personal-service professionals and customers',
+  'Funding and technical-support programme research',
 ]
 
 const next = [
-  'Interview the 3 current AMKA users about their income sources',
-  'Deploy AMKA publicly once hosting funds are available',
-  'Begin SkillVault beta with a small group of service workers',
-  'Publish the first Phase 1 summary, with findings reported honestly',
+  'Interview personal-service professionals and prospective customers',
+  'Validate the first pilot area and the most frequent customer needs',
+  'Build the SkillVault professional identity foundation',
+  'Test the request, application and booking workflow',
+  'Publish progress only when results can be substantiated',
 ]
 
 function List({ title, items }: { title: string; items: string[] }) {
@@ -44,18 +47,22 @@ export default function Progress() {
       <section className="bg-asili-dark py-16 text-white md:py-20">
         <div className="section-container max-w-3xl">
           <h1 className="mb-4 text-white">Progress</h1>
-          <p className="text-lg text-gray-100">What is done, what is in progress, and what comes next. Updated monthly. Last updated: {site.lastUpdated}.</p>
+          <p className="text-lg text-gray-100">
+            A transparent view of what has been established, what is being worked
+            on and what comes next. Last reviewed: {site.lastUpdated}.
+          </p>
         </div>
       </section>
-
       <section className="section-container py-16">
         <div className="grid gap-6 md:grid-cols-3">
-          <List title="Done" items={done} />
+          <List title="Established" items={done} />
           <List title="In progress" items={inProgress} />
           <List title="Next" items={next} />
         </div>
         <p className="mt-10 max-w-2xl text-gray-600">
-          This page will only show numbers once they can be checked. Users, transactions and findings will be added as they happen.
+          We do not publish user, transaction, revenue or impact numbers until
+          they can be checked and responsibly reported. Planned work is not
+          presented as completed work.
         </p>
       </section>
     </div>
