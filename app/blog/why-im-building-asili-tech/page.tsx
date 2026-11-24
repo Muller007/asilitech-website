@@ -16,6 +16,9 @@ export default function Post() {
           <h1 className="text-white">Why I’m building Asili Tech: infrastructure for economic participation</h1>
         </div>
       </header>
+      <div className="section-container max-w-4xl pt-8">
+        <img src="/blog/asili-founder-johannesburg.webp" alt="Johannesburg skyline at sunset" className="aspect-[16/9] w-full rounded-2xl object-cover shadow-sm" fetchPriority="high" />
+      </div>
       <div className="section-container prose-body max-w-3xl py-16">
         <p>I started Asili Tech with a question: what would technology look like if it began with the realities of how people across Africa actually work, earn and build livelihoods?</p>
         <p>Too often, digital products are designed around a narrow picture of economic life: one employer, one payslip, one bank account and a neat record of income. That picture does not describe everyone. Many people combine self-employment, casual work, small businesses and service jobs. Others have valuable skills but no formal credential or consistent way to demonstrate the quality of their work.</p>
