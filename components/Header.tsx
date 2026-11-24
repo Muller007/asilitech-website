@@ -1,3 +1,4 @@
+
 'use client'
 
 import Link from 'next/link'
@@ -17,37 +18,67 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white">
-      <div className="section-container flex items-center justify-between py-2">
-        <Link href="/" aria-label="Asili Tech home">
-          <img src="/logo.png" alt="Asili Tech logo" className="h-14 w-auto" />
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white shadow-sm">
+      <div className="section-container flex min-h-[88px] items-center justify-between py-3">
+
+        {/* Brand logo */}
+        <Link
+          href="/"
+          aria-label="Asili Tech home"
+          className="flex shrink-0 items-center"
+          onClick={() => setOpen(false)}
+        >
+          <img
+            src="/logo.png"
+            alt="Asili Tech"
+            className="h-[60px] w-auto max-w-[220px] object-contain md:h-[72px] md:max-w-[260px]"
+          />
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        {/* Desktop navigation */}
+        <nav className="hidden items-center gap-5 lg:gap-7 md:flex">
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm font-medium text-asili-dark hover:text-asili-gold">
+            <Link
+              key={item.href}
+              href={item.href}
+              className="whitespace-nowrap text-sm font-semibold text-asili-dark transition-colors duration-200 hover:text-asili-gold"
+            >
               {item.name}
             </Link>
           ))}
         </nav>
 
-        <button className="p-2 md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-          {open ? <X size={24} /> : <Menu size={24} />}
+        {/* Mobile menu button */}
+        <button
+          type="button"
+          className="rounded-lg p-2 text-asili-dark transition-colors hover:bg-gray-100 md:hidden"
+          onClick={() => setOpen(!open)}
+          aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+        >
+          {open ? <X size={27} /> : <Menu size={27} />}
         </button>
       </div>
 
+      {/* Mobile navigation */}
       {open && (
-        <nav className="section-container flex flex-col gap-4 pb-4 md:hidden">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="text-sm font-medium text-asili-dark"
-            >
-              {item.name}
-            </Link>
-          ))}
+        <nav
+          id="mobile-navigation"
+          className="border-t border-gray-100 bg-white px-6 pb-6 pt-5 md:hidden"
+        >
+          <div className="section-container flex flex-col gap-5">
+            {nav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="text-base font-medium text-asili-dark transition-colors hover:text-asili-gold"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </nav>
       )}
     </header>
