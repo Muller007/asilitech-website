@@ -16,6 +16,9 @@ export default function Post() {
           <h1 className="text-white">Skills need proof, not just promotion</h1>
         </div>
       </header>
+      <div className="section-container max-w-4xl pt-8">
+        <img src="/blog/skillvault-service-professional.webp" alt="A service professional working with a customer in a salon" className="aspect-[16/9] w-full rounded-2xl object-cover shadow-sm" fetchPriority="high" />
+      </div>
       <div className="section-container prose-body max-w-3xl py-16">
         <p>A talented hair stylist may have years of experience and a loyal group of customers. A make-up artist may have a portfolio full of excellent work. A barber may be known in their neighbourhood for consistency and care. Yet when a new customer searches online, that experience can be difficult to see.</p>
         <p>This is one of the gaps in how service work is discovered. Many independent professionals rely on referrals, social media posts, informal networks and repeat customers. These channels matter, but they can be fragmented. A recommendation may sit in a WhatsApp conversation, photographs may be scattered across social accounts, and a person's work history may exist only in the memories of previous customers.</p>
