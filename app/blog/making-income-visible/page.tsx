@@ -16,6 +16,9 @@ export default function Post() {
           <h1 className="text-white">Making income visible: a practical first step towards financial resilience</h1>
         </div>
       </header>
+      <div className="section-container max-w-4xl pt-8">
+        <img src="/blog/amka-market-business.webp" alt="A small market business owner using a smartphone" className="aspect-[16/9] w-full rounded-2xl object-cover shadow-sm" fetchPriority="high" />
+      </div>
       <div className="section-container prose-body max-w-3xl py-16">
         <p>Imagine earning money from three different activities in the same week. You sell food on some days, take on occasional cleaning work and receive payments for a service you provide from home. Money comes in at different times, and expenses are paid in cash, by bank transfer or through a mobile wallet.</p>
         <p>At the end of the week, the question is not simply how much money came in. It is how much remains after stock, transport, data, supplies, household costs and other commitments. When income and expenses are spread across activities and payment methods, it can be difficult to see the full picture.</p>
