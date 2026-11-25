@@ -5,9 +5,9 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://asilitech.com'),
-  title: 'Asili Tech | Financial tools and research for informal workers',
+  title: 'Asili Tech | Financial intelligence and opportunity for informal work',
   description:
-    'Asili Tech builds AMKA, a WhatsApp financial assistant, and SkillVault, a gig platform, for informal workers in Africa. Research on how they allocate time and money.',
+    'Asili Tech is a technology and research venture developing AMKA and SkillVault to support financial visibility, professional credibility and economic opportunity for informal workers in Africa.',
   openGraph: {
     title: 'Asili Tech',
     description: 'Financial tools and research for informal workers in Africa.',
