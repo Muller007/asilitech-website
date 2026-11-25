@@ -10,12 +10,13 @@ export default function Home() {
             African technology • Practical tools • Applied research
           </p>
           <h1 className="mb-6 text-white">
-            Building practical infrastructure for economic participation in Africa.
+            Making informal work more visible, understood and connected to opportunity.
           </h1>
           <p className="mb-8 max-w-3xl text-lg text-gray-100 md:text-xl">
-            Asili Tech develops technology that helps people understand their finances,
-            demonstrate their capabilities and access better economic opportunities.
-            Our work is centred on two products: AMKA Finance and SkillVault.
+            Asili Tech is a technology and research venture focused on the realities of
+            informal work across Africa. We are developing tools that help people
+            understand their money, demonstrate their capabilities and access
+            economic opportunities through AMKA Finance and SkillVault.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link href="/products" className="btn-primary bg-asili-gold text-asili-dark hover:bg-white">
@@ -33,8 +34,9 @@ export default function Home() {
         <h2 className="mb-4">Two products. One broader ambition.</h2>
         <p className="mb-10 max-w-3xl text-gray-600">
           Economic participation depends on more than access to financial services.
-          People also need ways to understand their income, demonstrate what they can do
-          and build a record of the work they have completed.
+          It also depends on whether people can understand irregular income, make
+          informed decisions, demonstrate their capabilities and access trusted
+          opportunities. Our research helps us understand these connected challenges.
         </p>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="card">
@@ -98,6 +100,17 @@ export default function Home() {
             <h3 className="mb-3">Earn trust through evidence</h3>
             <p className="text-gray-600">Be clear about product maturity, protect user information and publish only supportable results.</p>
           </div>
+        </div>
+      </section>
+
+      <section className="section-container py-16">
+        <div className="grid gap-8 rounded-2xl border border-gray-200 p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
+          <div className="max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-asili-green">Research-led development</p>
+            <h2 className="mb-4">Understand the economy behind the numbers.</h2>
+            <p className="text-gray-600">Our research explores multi-income livelihoods, financial decision-making, skills evidence and access to opportunity. It helps shape the questions we ask—not claims of impact we have yet to demonstrate.</p>
+          </div>
+          <Link href="/research" className="btn-secondary whitespace-nowrap">Explore our research</Link>
         </div>
       </section>
 
