@@ -8,6 +8,7 @@ const done = [
   'SkillVault business direction and two-sided marketplace concept defined',
   'SkillVault initial personal-services pilot segment selected',
   'Initial SkillVault requirements and system-design foundations documented',
+  'Initial public research agenda and literature-review notes established',
 ]
 
 const inProgress = [
@@ -15,6 +16,7 @@ const inProgress = [
   'SkillVault MVP requirements, user journeys and data model',
   'SkillVault pilot discovery with personal-service professionals and customers',
   'Funding and technical-support programme research',
+  'Refining the research direction on portfolio optimisation for multi-income informal workers',
 ]
 
 const next = [
@@ -22,6 +24,8 @@ const next = [
   'Validate the first pilot area and the most frequent customer needs',
   'Build the SkillVault professional identity foundation',
   'Test the request, application and booking workflow',
+  'Develop a feasible research design and identify appropriate data and ethics requirements',
+  'Explore research, pilot and ecosystem partnerships',
   'Publish progress only when results can be substantiated',
 ]
 
