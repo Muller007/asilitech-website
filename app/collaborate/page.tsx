@@ -17,13 +17,13 @@ const groups = [
   },
   {
     title: 'Researchers and advisors',
-    body: 'We welcome thoughtful feedback on African technology, informal economies, financial inclusion, marketplace trust, responsible AI and product research.',
+    body: 'We welcome researchers and academic partners interested in informal livelihoods, financial inclusion, quantitative modelling, marketplace trust and responsible technology. We are open to discussing research questions, methods and knowledge exchange.',
     cta: 'Share your expertise',
     subject: 'Research%20and%20advisory',
   },
   {
     title: 'Technical and ecosystem partners',
-    body: 'We are open to conversations with people and organisations who can contribute relevant technical expertise, pilot access, mentorship or responsible funding.',
+    body: 'We welcome conversations with organisations that can contribute pilot access, technical expertise, mentorship, research support or suitable non-dilutive funding. We are currently exploring partnerships and early-stage support; this is not an announcement of an open investment round.',
     cta: 'Discuss collaboration',
     subject: 'Partnership%20enquiry',
   },
