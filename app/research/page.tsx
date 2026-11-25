@@ -292,12 +292,60 @@ export default function ResearchPage() {
             <div>
               <p className="font-semibold text-slate-900">Publications</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                No publications are available yet. Research outputs will be
-                listed here if and when they are completed and suitable for
-                public release.
+                One public literature note is now available. Further notes and
+                original research outputs will be listed here as they are
+                completed and suitable for public release.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
+              Literature and insights
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+              Research that informs how we build.
+            </h2>
+            <p className="mt-5 text-base leading-7 text-slate-600">
+              These notes examine existing research and translate relevant
+              ideas into questions for Asili Tech. They are literature analyses,
+              not claims of original empirical findings.
+            </p>
+          </div>
+          <article className="mt-10 grid gap-6 rounded-3xl border border-slate-200 p-7 md:grid-cols-[1fr_auto] md:items-center md:p-9">
+            <div>
+              <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                <span>Research note 001</span>
+                <span>·</span>
+                <span>Livelihoods and informal economy</span>
+                <span>·</span>
+                <span>November 2026</span>
+              </div>
+              <h3 className="mt-4 text-2xl font-semibold text-slate-950">
+                Rural Livelihood Diversity in Developing Countries
+              </h3>
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                A reading of Frank Ellis (1999) on how households combine
+                activities, assets and social support—and what this raises
+                for AMKA’s financial intelligence and SkillVault’s evidence
+                of professional capability.
+              </p>
+              <p className="mt-3 text-xs leading-6 text-slate-500">
+                Source: Ellis (1999), ODI Natural Resource Perspectives No. 40.
+                The paper is a conceptual and policy synthesis, not a study of
+                Asili Tech products or current South African market conditions.
+              </p>
+            </div>
+            <Link href="/research/001-livelihood-diversity"
+              className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
+              Read full research note
+            </Link>
+          </article>
         </div>
       </section>
 
