@@ -57,6 +57,25 @@ export default function About() {
           </p>
         </div>
 
+        <h2 className="mb-6 mt-12">Research and innovation</h2>
+        <div className="prose-body">
+          <p>
+            Asili Tech is developing an independent research agenda around three
+            connected areas: the economic realities of multi-income informal work,
+            financial intelligence for micro-businesses, and the ways skills,
+            reputation and networks shape access to opportunity.
+          </p>
+          <p>
+            This agenda is informed by the founder’s ongoing MSc Financial
+            Engineering studies at WorldQuant University. Individual research
+            directions may inform future academic proposals, but they are not
+            presented as university-approved projects unless formally approved.
+            Research and product activity remain distinct, with appropriate
+            consent and ethical safeguards required before participant information
+            is used for research.
+          </p>
+        </div>
+
         <h2 className="mb-6 mt-12">Our vision</h2>
         <div className="prose-body">
           <p>
