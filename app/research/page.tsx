@@ -79,29 +79,31 @@ export default function ResearchPage() {
       <section className="mx-auto grid max-w-7xl gap-10 px-6 pb-16 pt-14 md:grid-cols-[1.02fr_0.98fr] md:items-center md:px-10 md:pb-24 md:pt-20">
         <div>
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">
-            Research direction · WorldQuant University
+            ASILI TECH RESEARCH · ECONOMIC PARTICIPATION
           </p>
           <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight text-slate-950 md:text-6xl">
             Understanding how people make a living across multiple income streams.
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-slate-600">
-            This research direction explores the financial and practical
-            decisions faced by informal workers who combine different
-            income-generating activities—and how quantitative methods can help
-            us understand those choices.
+            Asili Tech investigates how people earn, manage money, demonstrate their
+            capabilities and access opportunities across informal and independent
+            work. We use research to understand these realities before turning
+            assumptions into products.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-800">
-              MSc research direction
+              Independent research direction
             </span>
             <span className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600">
               In preparation
             </span>
           </div>
           <p className="mt-6 max-w-xl text-sm leading-6 text-slate-500">
-            The topic and plan described here are a proposed direction, not a
-            statement of institutional approval, completed research or
-            established findings.
+            This is an independent Asili Tech research direction. It is not an
+            approved, supervised or endorsed WorldQuant University project.
+            The topic may inform a future MSc Financial Engineering capstone
+            proposal, subject to programme requirements, eligibility and
+            institutional approval.
           </p>
         </div>
 
@@ -131,7 +133,7 @@ export default function ResearchPage() {
                 The research question
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
-                Portfolio optimisation for multi-income informal workers
+                Portfolio optimisation for multi-income informal workers in South Africa
               </h2>
             </div>
             <div className="space-y-5 text-base leading-8 text-slate-600">
@@ -142,10 +144,12 @@ export default function ResearchPage() {
                 levels of uncertainty.
               </p>
               <p>
-                The proposed research asks how quantitative and optimisation
+                The proposed research asks how constrained quantitative and optimisation
                 methods could help describe these trade-offs and support more
-                informed allocation decisions—without assuming that every
-                worker has the same goals, constraints or opportunities.
+                informed allocation decisions. It will consider limited working
+                time, operating capital, costs, irregular demand and uncertainty,
+                without assuming that every worker has the same goals, constraints
+                or opportunities.
               </p>
               <p className="rounded-2xl border border-emerald-100 bg-white p-5 text-sm leading-7 text-slate-600">
                 <strong className="text-slate-900">Current position:</strong>{" "}
@@ -158,6 +162,34 @@ export default function ResearchPage() {
         </div>
       </section>
 
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">Research programme</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">Three connected questions. One commitment to evidence.</h2>
+            <p className="mt-5 text-base leading-7 text-slate-600">Our research agenda connects the realities of informal work with the design of useful, responsible technology. These are evolving areas of inquiry, not claims of completed research.</p>
+          </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-3">
+            <article className="rounded-2xl border border-slate-200 p-6">
+              <span className="text-sm font-semibold text-emerald-700">01 · ECONOMIC REALITIES</span>
+              <h3 className="mt-3 text-xl font-semibold text-slate-950">How people make a living</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">Understand multiple income activities, livelihood strategies, seasonality, risk, time constraints and the choices people actually face.</p>
+            </article>
+            <article className="rounded-2xl border border-slate-200 p-6">
+              <span className="text-sm font-semibold text-emerald-700">02 · FINANCIAL INTELLIGENCE</span>
+              <h3 className="mt-3 text-xl font-semibold text-slate-950">How money is managed</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">Explore financial visibility, cash-flow practices, business decision-making and the usefulness of accessible financial information.</p>
+            </article>
+            <article className="rounded-2xl border border-slate-200 p-6">
+              <span className="text-sm font-semibold text-emerald-700">03 · OPPORTUNITY & TRUST</span>
+              <h3 className="mt-3 text-xl font-semibold text-slate-950">How capabilities are recognised</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">Investigate skills evidence, reputation, networks, information gaps and access to work—without excluding people who lack formal credentials.</p>
+            </article>
+          </div>
+          <p className="mt-7 max-w-3xl text-sm leading-7 text-slate-500">Academic context: this work is informed by the founder’s ongoing MSc Financial Engineering studies at WorldQuant University. Any future capstone submission would be a separate academic process subject to WQU requirements and approval.</p>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
@@ -167,9 +199,11 @@ export default function ResearchPage() {
             From understanding the problem to evaluating a model.
           </h2>
           <p className="mt-5 text-base leading-7 text-slate-600">
-            These stages are an indicative planning framework. Their sequence,
-            timing and methods may change as the research question is refined
-            and institutional requirements are established.
+            These stages are an indicative long-term Asili Tech research framework,
+            not an official university or capstone schedule. Their sequence,
+            timing and methods may change as the research question is refined,
+            feasibility is assessed and any relevant institutional requirements
+            are established.
           </p>
         </div>
 
@@ -293,9 +327,8 @@ export default function ResearchPage() {
             <div>
               <p className="font-semibold text-slate-900">Publications</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                One public literature note is now available. Further notes and
-                original research outputs will be listed here as they are
-                completed and suitable for public release.
+                Public literature notes are available below. No original empirical
+                findings or research dataset are currently being claimed.
               </p>
             </div>
           </div>
