@@ -347,6 +347,36 @@ export default function ResearchPage() {
               Read full research note
             </Link>
           </article>
+
+          <article className="mt-5 grid gap-6 rounded-3xl border border-slate-200 p-7 md:grid-cols-[1fr_auto] md:items-center md:p-9">
+            <div>
+              <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                <span>Research note 002</span>
+                <span>·</span>
+                <span>Livelihood measurement and resilience</span>
+                <span>·</span>
+                <span>November 2026</span>
+              </div>
+              <h3 className="mt-4 text-2xl font-semibold text-slate-950">
+                Household Livelihood Diversification in Rural Africa
+              </h3>
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                An analysis of Musumba et al. (2022), based on 1,773 households
+                across eight sub-Saharan African countries. The note examines
+                livelihood transitions, associated factors and the limits of
+                measuring diversification by simply counting activities.
+              </p>
+              <p className="mt-3 text-xs leading-6 text-slate-500">
+                Source: Agricultural Economics, 53(2), 246–256. Empirical study
+                of selected rural villages; not a representative study of
+                urban South African informal workers.
+              </p>
+            </div>
+            <Link href="/research/002-household-livelihood-diversification"
+              className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
+              Read full research note
+            </Link>
+          </article>
         </div>
       </section>
 
