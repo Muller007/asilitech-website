@@ -35,7 +35,6 @@ export async function getPublishedContent(): Promise<PublishedContent[]> {
     const response = await fetch(endpoint.toString(), {
       headers: {
         apikey: anonKey,
-        Authorization: `Bearer ${anonKey}`,
         Accept: "application/json",
       },
       next: { revalidate: 60 },
