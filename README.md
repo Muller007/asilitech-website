@@ -46,3 +46,19 @@ The revised site positions Asili Tech around economic participation:
 - SkillVault: professional identity, work evidence, customer discovery and opportunity.
 
 It keeps the products distinct while explaining their shared purpose. It also changes the collaboration page to invite personal-service professionals and potential customers for the SkillVault pilot.
+
+
+## Supabase-published website updates
+
+The public website can display content created in the private Asili Tech Command Centre.
+
+Add these environment variables to the Vercel project for this website (and to a local `.env.local` when developing):
+
+- `NEXT_PUBLIC_SUPABASE_URL`: the Supabase project URL.
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: the Supabase anon/publishable key.
+
+Use the same Supabase project connected to the private Command Centre. The website reads from `public_content` through the anonymous REST API and requests only rows where `status = published` and `visibility = public`. Supabase Row Level Security remains the security boundary. Never add a `service_role` key to this website.
+
+Published entries appear in the homepage's latest-updates section, at `/updates`, and on their own `/updates/[slug]` page. Existing homepage, product, research and progress content remains in place as a fallback; this first integration is additive and does not replace those sections.
+
+The content fetch revalidates every 60 seconds. If the environment variables are not configured or Supabase is temporarily unavailable, the rest of the website continues to render and the updates list shows its empty state.
