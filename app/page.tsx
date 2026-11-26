@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import { site } from '@/lib/site'
+import Link from 'next/link'
+import { getPublishedContent } from '@/lib/content'
 
-export default function Home() {
+export default async function Home() {
+  const updates = (await getPublishedContent()).slice(0, 3)
+
   return (
     <div>
       <section className="bg-asili-dark py-20 text-white md:py-28">
@@ -113,6 +117,34 @@ export default function Home() {
           <Link href="/research" className="btn-secondary whitespace-nowrap">Explore our research</Link>
         </div>
       </section>
+
+      {updates.length > 0 && (
+        <section className="section-container py-16">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-asili-green">From the Command Centre</p>
+              <h2>Latest updates</h2>
+            </div>
+            <Link href="/updates" className="font-semibold text-asili-green hover:text-asili-gold">
+              View all updates →
+            </Link>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {updates.map((item) => (
+              <article className="card" key={item.id}>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-asili-green">
+                  {item.content_type.replace(/_/g, " ")}
+                </p>
+                <h3 className="mb-3">{item.title}</h3>
+                {item.summary && <p className="mb-5 text-gray-600">{item.summary}</p>}
+                <Link href={`/updates/${encodeURIComponent(item.slug)}`} className="font-semibold text-asili-green hover:text-asili-gold">
+                  Read update →
+                </Link>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="bg-asili-dark py-16 text-white">
         <div className="section-container max-w-3xl text-center">
