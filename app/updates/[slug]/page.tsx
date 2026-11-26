@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPublishedContent } from "@/lib/content";
+import MarkdownContent from "@/components/markdown-content";
 
 type Props = { params: { slug: string } };
 
@@ -40,7 +41,7 @@ export default async function UpdateDetailPage({ params }: Props) {
       <h1 className="mb-6">{item.title}</h1>
       {item.summary && <p className="mb-8 text-xl leading-relaxed text-gray-600">{item.summary}</p>}
       {item.body ? (
-        <div className="whitespace-pre-wrap leading-8 text-gray-700">{item.body}</div>
+        <MarkdownContent content={item.body} />
       ) : (
         <p className="text-gray-600">This update does not have a full article body.</p>
       )}
