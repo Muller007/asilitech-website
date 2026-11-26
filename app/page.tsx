@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { site } from '@/lib/site'
-import Link from 'next/link'
 import { getPublishedContent } from '@/lib/content'
 
 export default async function Home() {
