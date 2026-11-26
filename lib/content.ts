@@ -24,7 +24,7 @@ export async function getPublishedContent(): Promise<PublishedContent[]> {
   if (!supabaseUrl || !anonKey) return [];
 
   const endpoint = new URL(
-    `${supabaseUrl.replace(/\\/$/, "")}/rest/v1/public_content`,
+    `${supabaseUrl.endsWith("/") ? supabaseUrl.slice(0, -1) : supabaseUrl}/rest/v1/public_content`,
   );
   endpoint.searchParams.set("select", selectFields);
   endpoint.searchParams.set("status", "eq.published");
