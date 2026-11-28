@@ -8,6 +8,7 @@ import { Menu, X } from 'lucide-react'
 const nav = [
   { name: 'About', href: '/about' },
   { name: 'Products', href: '/products' },
+  { name: 'AMKA', href: '/amka' },
   { name: 'SkillVault', href: '/skillvault' },
   { name: 'Research', href: '/research' },
   { name: 'Progress', href: '/progress' },
