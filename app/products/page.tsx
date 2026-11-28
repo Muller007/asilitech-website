@@ -33,6 +33,31 @@ export default function Products() {
             <p className="mt-5 leading-8 text-gray-600">AMKA is a WhatsApp-first financial assistant for people in the informal economy. The product direction is to make it easier to record income and expenses, understand cash flow across activities and make decisions using a clearer picture of their finances.</p>
             <p className="mt-4 leading-8 text-gray-600">The longer-term ambition is to turn consented, appropriately protected financial records into useful insights. Any financial or credit-related use must be developed with suitable safeguards and partners; AMKA does not promise access to loans or improved credit outcomes.</p>
             <div className="mt-7 flex items-center gap-3 text-sm text-asili-green"><Wallet size={19} /><span className="font-semibold">Accessible financial understanding</span></div>
+            <div className="mt-7 rounded-2xl border border-amber-100 bg-[#fbf8ef] p-5 md:p-6">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-asili-green">The AMKA idea</p>
+                <span className="rounded-full bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-800">Illustrative journey</span>
+              </div>
+              <p className="mt-2 text-sm leading-6 text-gray-600">From scattered money activity to a clearer picture for everyday decisions.</p>
+              <div className="mt-5 grid grid-cols-3 gap-2 text-center">
+                <div className="rounded-xl bg-white p-3 shadow-sm">
+                  <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-amber-100 text-asili-green"><Wallet size={18} /></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Record</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Income & costs</p>
+                </div>
+                <div className="rounded-xl bg-white p-3 shadow-sm">
+                  <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-amber-100 text-asili-green"><svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 18V6m0 12h16M7 15l4-4 3 2 5-6" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Understand</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Cash flow</p>
+                </div>
+                <div className="rounded-xl bg-white p-3 shadow-sm">
+                  <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-amber-100 text-asili-green"><svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M5 12h14m-5-5 5 5-5 5" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Decide</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">With context</p>
+                </div>
+              </div>
+              <p className="mt-4 border-t border-amber-100 pt-3 text-[11px] leading-5 text-gray-500">A product direction—not a representation of currently available features or financial advice.</p>
+            </div>
             <a href={`mailto:${site.email}?subject=AMKA%20enquiry`} className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-asili-green px-6 py-3 font-bold text-white transition hover:bg-asili-dark">Enquire about AMKA <ArrowRight size={17} /></a>
           </div>
         </article>
