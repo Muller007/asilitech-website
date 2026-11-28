@@ -105,7 +105,7 @@ export default function Products() {
               </div>
               <p className="mt-4 border-t border-amber-100 pt-3 text-[11px] leading-5 text-gray-500">A planned product direction—not a live feature set or a guarantee of work, verification or outcomes.</p>
             </div>
-            <a href={`mailto:${site.email}?subject=SkillVault%20pilot%20interest`} className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border-2 border-asili-green px-6 py-3 font-bold text-asili-green transition hover:bg-asili-green hover:text-white">Express interest in the pilot <ArrowRight size={17} /></a>
+            <div className="mt-8 flex flex-wrap items-center gap-4"><Link href="/skillvault" className="inline-flex w-fit items-center gap-2 rounded-full bg-asili-green px-6 py-3 font-bold text-white transition hover:bg-asili-dark">Explore SkillVault <ArrowRight size={17} /></Link><a href={`mailto:${site.email}?subject=SkillVault%20pilot%20interest`} className="inline-flex w-fit items-center gap-2 font-semibold text-asili-green hover:text-asili-dark">Express pilot interest <ArrowRight size={17} /></a></div>
           </div>
         </article>
       </section>
