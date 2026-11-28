@@ -162,6 +162,33 @@ export default function ResearchPage() {
         </div>
       </section>
 
+      <section className="overflow-hidden bg-[#123d31] text-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#e5bd68]">A conceptual framework</p>
+              <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight md:text-4xl">One livelihood. Multiple moving parts.</h2>
+              <p className="mt-5 max-w-lg text-base leading-8 text-white/75">A person may combine different ways of earning. Each activity competes for time and working capital, carries its own costs and faces changing demand. The research asks how these trade-offs can be understood without reducing people’s lives to a single number.</p>
+              <p className="mt-5 text-xs leading-6 text-white/55">Illustrative framework only. The activities and relationships shown are conceptual; they are not measured data or research findings.</p>
+            </div>
+            <div className="rounded-[2rem] border border-white/15 bg-white/[0.06] p-5 shadow-2xl shadow-black/20 md:p-8">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                <div className="rounded-2xl bg-[#f7f4ec] p-4 text-[#173f33]"><span className="text-[10px] font-bold uppercase tracking-wider text-[#8b6726]">Income stream 01</span><p className="mt-2 text-sm font-bold">Trading</p><p className="mt-1 text-xs text-slate-600">Stock · sales · demand</p></div>
+                <div className="rounded-2xl bg-[#f7f4ec] p-4 text-[#173f33]"><span className="text-[10px] font-bold uppercase tracking-wider text-[#8b6726]">Income stream 02</span><p className="mt-2 text-sm font-bold">Services</p><p className="mt-1 text-xs text-slate-600">Time · skills · clients</p></div>
+                <div className="rounded-2xl bg-[#f7f4ec] p-4 text-[#173f33]"><span className="text-[10px] font-bold uppercase tracking-wider text-[#8b6726]">Income stream 03</span><p className="mt-2 text-sm font-bold">Casual work</p><p className="mt-1 text-xs text-slate-600">Shifts · availability</p></div>
+                <div className="rounded-2xl bg-[#f7f4ec] p-4 text-[#173f33]"><span className="text-[10px] font-bold uppercase tracking-wider text-[#8b6726]">Income stream 04</span><p className="mt-2 text-sm font-bold">Other work</p><p className="mt-1 text-xs text-slate-600">Seasonal · variable</p></div>
+              </div>
+              <div className="flex justify-center py-3 text-[#e5bd68]" aria-hidden="true"><svg viewBox="0 0 520 42" className="h-10 w-full max-w-xl" fill="none"><path d="M65 2V18H455V2M195 2V18M325 2V18M260 18V38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="m253 31 7 7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+              <div className="mx-auto max-w-sm rounded-2xl border border-[#e5bd68]/50 bg-[#e5bd68]/15 px-5 py-4 text-center"><p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#e5bd68]">The allocation challenge</p><p className="mt-2 text-lg font-semibold">How should limited resources be shared?</p></div>
+              <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
+                {['Time','Working capital','Operating costs','Uncertainty'].map((item, index) => <div key={item} className="rounded-xl border border-white/15 bg-white/[0.04] px-3 py-3 text-center"><span className="mb-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#e5bd68]/15 text-xs font-bold text-[#e5bd68]">{index + 1}</span><p className="text-xs font-semibold text-white/85">{item}</p></div>)}
+              </div>
+              <div className="mt-5 rounded-xl bg-white/[0.08] px-4 py-3 text-center"><p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e5bd68]">Research aim</p><p className="mt-1 text-sm text-white/80">Understand trade-offs before proposing a model</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
           <div className="max-w-3xl">
