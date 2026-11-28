@@ -3,12 +3,11 @@ import Link from 'next/link'
 import {
   ArrowRight,
   BookOpen,
-  ChartNoAxesCombined,
+  BarChart3,
   ShieldCheck,
   Sparkles,
-  UsersRound,
+  Users,
 } from 'lucide-react'
-import { site } from '@/lib/site'
 import { getPublishedContent } from '@/lib/content'
 
 export default async function Home() {
@@ -42,7 +41,7 @@ export default async function Home() {
             <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/65">
               <span className="inline-flex items-center gap-2"><ShieldCheck size={16} className="text-asili-gold" /> Trust by design</span>
               <span className="inline-flex items-center gap-2"><BookOpen size={16} className="text-asili-gold" /> Research-led</span>
-              <span className="inline-flex items-center gap-2"><UsersRound size={16} className="text-asili-gold" /> People-centred</span>
+              <span className="inline-flex items-center gap-2"><Users size={16} className="text-asili-gold" /> People-centred</span>
             </div>
           </div>
 
@@ -77,11 +76,11 @@ export default async function Home() {
             <div><h2 className="text-base font-bold">Trust comes first</h2><p className="mt-1 text-sm leading-6 text-gray-500">Privacy, safety and transparent product decisions.</p></div>
           </div>
           <div className="flex items-start gap-4">
-            <span className="rounded-2xl bg-asili-cream p-3 text-asili-green"><ChartNoAxesCombined size={23} /></span>
+            <span className="rounded-2xl bg-asili-cream p-3 text-asili-green"><BarChart3 size={23} /></span>
             <div><h2 className="text-base font-bold">Evidence over hype</h2><p className="mt-1 text-sm leading-6 text-gray-500">Research and real-world validation shape what we build.</p></div>
           </div>
           <div className="flex items-start gap-4">
-            <span className="rounded-2xl bg-asili-cream p-3 text-asili-green"><UsersRound size={23} /></span>
+            <span className="rounded-2xl bg-asili-cream p-3 text-asili-green"><Users size={23} /></span>
             <div><h2 className="text-base font-bold">Designed around people</h2><p className="mt-1 text-sm leading-6 text-gray-500">Technology that respects different ways of earning and working.</p></div>
           </div>
         </div>
@@ -136,8 +135,8 @@ export default async function Home() {
             <Link href="/research" className="mt-7 inline-flex items-center gap-2 font-bold text-asili-green hover:text-asili-dark">Explore our research <ArrowRight size={17} /></Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><ChartNoAxesCombined size={22} /></span><h3 className="text-lg font-bold">Financial visibility</h3><p className="mt-2 text-sm leading-6 text-gray-600">Make irregular income and everyday financial decisions easier to understand.</p></div>
-            <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><UsersRound size={22} /></span><h3 className="text-lg font-bold">Recognised capability</h3><p className="mt-2 text-sm leading-6 text-gray-600">Help people show what they can do, not only where they have worked.</p></div>
+            <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><BarChart3 size={22} /></span><h3 className="text-lg font-bold">Financial visibility</h3><p className="mt-2 text-sm leading-6 text-gray-600">Make irregular income and everyday financial decisions easier to understand.</p></div>
+            <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><Users size={22} /></span><h3 className="text-lg font-bold">Recognised capability</h3><p className="mt-2 text-sm leading-6 text-gray-600">Help people show what they can do, not only where they have worked.</p></div>
             <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><ShieldCheck size={22} /></span><h3 className="text-lg font-bold">Responsible trust</h3><p className="mt-2 text-sm leading-6 text-gray-600">Build confidence through clear safeguards and evidence-based decisions.</p></div>
             <div className="rounded-3xl bg-white p-7 shadow-sm"><span className="mb-5 inline-flex rounded-xl bg-asili-cream p-3 text-asili-green"><Sparkles size={22} /></span><h3 className="text-lg font-bold">Useful innovation</h3><p className="mt-2 text-sm leading-6 text-gray-600">Apply technology where it solves real problems and improves daily life.</p></div>
           </div>
