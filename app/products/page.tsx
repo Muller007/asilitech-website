@@ -75,6 +75,36 @@ export default function Products() {
             <p className="mt-4 leading-8 text-gray-600">The first pilot is focused on personal services—hair, beauty and grooming professionals—in a limited Johannesburg area. The planned core journey is professional profile → customer request → application → selection and agreement → communication → completion → eligible feedback.</p>
             <p className="mt-4 leading-8 text-gray-600">The initial product is planned as a mobile-friendly web application. Verification will be transparent and evidence-based. AI assistance, payments and advanced matching will be considered only when they are useful, safe and feasible.</p>
             <div className="mt-7 flex items-center gap-3 text-sm text-asili-green"><Users size={19} /><span className="font-semibold">Skills, reputation and trusted work</span></div>
+            <div className="mt-7 rounded-2xl border border-amber-100 bg-[#fbf8ef] p-5 md:p-6">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-asili-green">The SkillVault idea</p>
+                <span className="rounded-full bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-800">Illustrative journey</span>
+              </div>
+              <p className="mt-2 text-sm leading-6 text-gray-600">A professional's work and reputation can tell a richer story than a CV alone.</p>
+              <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                <div className="rounded-xl bg-white p-3 text-center shadow-sm">
+                  <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-asili-green"><Users size={19} /></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Show skills</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Profile & craft</p>
+                </div>
+                <div className="rounded-xl bg-white p-3 text-center shadow-sm">
+                  <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-asili-green"><svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5zM4 7.5l8 4.5 8-4.5M12 12v9" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Build a record</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Work evidence</p>
+                </div>
+                <div className="rounded-xl bg-white p-3 text-center shadow-sm">
+                  <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-asili-green"><svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 12h18M7 8l-4 4 4 4m10-8 4 4-4 4" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Connect</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Customer requests</p>
+                </div>
+                <div className="rounded-xl bg-white p-3 text-center shadow-sm">
+                  <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-asili-green"><svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="m5 12 4 4L19 6" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+                  <p className="mt-2 text-xs font-bold text-gray-800">Earn trust</p>
+                  <p className="mt-1 text-[10px] leading-4 text-gray-500">Eligible feedback</p>
+                </div>
+              </div>
+              <p className="mt-4 border-t border-amber-100 pt-3 text-[11px] leading-5 text-gray-500">A planned product direction—not a live feature set or a guarantee of work, verification or outcomes.</p>
+            </div>
             <a href={`mailto:${site.email}?subject=SkillVault%20pilot%20interest`} className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border-2 border-asili-green px-6 py-3 font-bold text-asili-green transition hover:bg-asili-green hover:text-white">Express interest in the pilot <ArrowRight size={17} /></a>
           </div>
         </article>
