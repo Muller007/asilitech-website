@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, BadgeCheck, BriefcaseBusiness, HeartHandshake, ShieldCheck, Sparkles, Users } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Briefcase, HeartHandshake, ShieldCheck, Sparkles, Users } from 'lucide-react'
 import { site } from '@/lib/site'
 
 export const metadata = {
@@ -15,7 +15,7 @@ const principles = [
     body: 'Profiles, work examples and feedback should help people make more informed choices. Verification must be clear about what has—and has not—been checked.',
   },
   {
-    icon: BriefcaseBusiness,
+    icon: Briefcase,
     title: 'A record that travels with the person',
     body: 'The Professional Passport is being designed as an independent professional record, not simply a profile that belongs to one marketplace.',
   },
@@ -76,7 +76,7 @@ export default function SkillVaultPage() {
             <p className="mt-2 text-sm leading-7 text-gray-600">Customers need useful signals about experience, expectations and past work—not unsupported promises.</p>
           </div>
           <div className="rounded-2xl border border-gray-200 bg-white p-6">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-50 text-asili-green"><BriefcaseBusiness size={21} /></div>
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-50 text-asili-green"><Briefcase size={21} /></div>
             <h3 className="mt-4 text-lg font-bold text-asili-dark">Reputation is fragmented</h3>
             <p className="mt-2 text-sm leading-7 text-gray-600">A professional's track record can be spread across platforms and personal networks, making it difficult to carry forward.</p>
           </div>
