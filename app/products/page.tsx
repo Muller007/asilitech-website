@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, ShieldCheck, Wallet, UsersRound } from 'lucide-react'
+import { ArrowRight, ShieldCheck, Wallet, Users } from 'lucide-react'
 import { site } from '@/lib/site'
 
 export const metadata = {
@@ -49,7 +49,7 @@ export default function Products() {
             <p className="mt-5 leading-8 text-gray-600">SkillVault is being designed as a services marketplace and digital professional identity platform. It will help customers discover and engage service professionals while helping workers build a credible record of skills, portfolio evidence, completed engagements and customer feedback.</p>
             <p className="mt-4 leading-8 text-gray-600">The first pilot is focused on personal services—hair, beauty and grooming professionals—in a limited Johannesburg area. The planned core journey is professional profile → customer request → application → selection and agreement → communication → completion → eligible feedback.</p>
             <p className="mt-4 leading-8 text-gray-600">The initial product is planned as a mobile-friendly web application. Verification will be transparent and evidence-based. AI assistance, payments and advanced matching will be considered only when they are useful, safe and feasible.</p>
-            <div className="mt-7 flex items-center gap-3 text-sm text-asili-green"><UsersRound size={19} /><span className="font-semibold">Skills, reputation and trusted work</span></div>
+            <div className="mt-7 flex items-center gap-3 text-sm text-asili-green"><Users size={19} /><span className="font-semibold">Skills, reputation and trusted work</span></div>
             <a href={`mailto:${site.email}?subject=SkillVault%20pilot%20interest`} className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border-2 border-asili-green px-6 py-3 font-bold text-asili-green transition hover:bg-asili-green hover:text-white">Express interest in the pilot <ArrowRight size={17} /></a>
           </div>
         </article>
@@ -59,7 +59,7 @@ export default function Products() {
         <div className="section-container grid max-w-7xl gap-8 py-14 md:grid-cols-3 md:py-16">
           <div className="flex items-start gap-4"><ShieldCheck className="mt-1 shrink-0 text-asili-green" size={24} /><div><h3 className="text-lg font-bold">Trust by design</h3><p className="mt-2 text-sm leading-6 text-gray-600">Privacy, clear verification and safeguards are part of product thinking from the beginning.</p></div></div>
           <div className="flex items-start gap-4"><Wallet className="mt-1 shrink-0 text-asili-green" size={24} /><div><h3 className="text-lg font-bold">Built for real constraints</h3><p className="mt-2 text-sm leading-6 text-gray-600">We consider affordability, access, irregular income and mobile-first use.</p></div></div>
-          <div className="flex items-start gap-4"><UsersRound className="mt-1 shrink-0 text-asili-green" size={24} /><div><h3 className="text-lg font-bold">Designed with people</h3><p className="mt-2 text-sm leading-6 text-gray-600">Product direction must be tested with the people whose problems we aim to solve.</p></div></div>
+          <div className="flex items-start gap-4"><Users className="mt-1 shrink-0 text-asili-green" size={24} /><div><h3 className="text-lg font-bold">Designed with people</h3><p className="mt-2 text-sm leading-6 text-gray-600">Product direction must be tested with the people whose problems we aim to solve.</p></div></div>
         </div>
       </section>
 
